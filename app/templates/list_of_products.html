@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+    <ul class="list-group">
+        {% for product in products %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href='/product/{{product}}'>{{product}} </a>
+                <p>Liczba opinii</p>
+                <p>Liczba zalet</p>
+                <p>Liczba wad</p>
+                <p>średnia ocena</p>
+                <a href="#" download class="btn btn-primary">Pobierz opinie (.csv)</a>
+                <a href="#" download class="btn btn-primary">Pobierz opinie (.xlsx)</a>
+                <a href="#" download class="btn btn-primary">Pobierz opinie (.json)</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+
+{% block titile %}
+<title>Strona produktu</title>
+<script src = 'https://code.jquery.com/jquery-3.5.1.js'></script>
+<script src = 'https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js'></script>
+<script src = 'https://cdn.datatables.net/1.13.4/js/dataTables.jqueryui.min.js'></script>
+<script src = 'https://cdn.datatables.net/scroller/2.1.1/js/dataTables.scroller.min.js'></script>
+
+      <script src = 'https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css'></script>
+      <script src ='https://cdn.datatables.net/1.13.4/css/dataTables.jqueryui.min.css'></script>
+      <script src ='https://cdn.datatables.net/scroller/2.1.1/css/scroller.jqueryui.min.css'></script>
+{%endblock%}
+
+{% block body %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+
+<div class="container">
+    <h1>Strona produktu</h1>
+
+   <!-- <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">author</th>
+          <th scope="col">recommendation</th>
+          <th scope="col">score</th>
+          <th scope="col">purchased</th>
+          <th scope="col">published_at</th>
+          <th scope="col">purchased_at</th>
+          <th scope="col">thumbs_up</th>
+          <th scope="col">thumbs_down</th>
+          <th scope="col">content</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        {% for d in data %}
+        <tr>
+            
+          <td>{{opinion_id}}</td>
+          <td>Lorem ipsum dolor sit amet</td>
+          <td>4.5</td>
+          <td>2023-05-24</td>
+          
+        </tr>
+        {% endfor %}
+         Dodaj więcej wierszy z opiniami tutaj 
+      </tbody>
+    </table>-->
+    <table id="table4">
+        <thead>
+            <tr>
+                <th>opinion_id</th>
+                <th>author</th>
+                <th>recommendation</th>
+                <th>score</th>
+                <th>purchased</th>
+                <th>published_at</th>
+                <th>purchased_at</th>
+                <th>thumbs_up</th>
+                <th>thumbs_down</th>
+                
+                <th>pros</th>
+                <th>cons</th>
+
+            </tr>
+        </thead>
+    </table>
+      <script>
+        var json =[
+    {
+        "opinion_id": "12330580",
+        "author": "DonCamillo85",
+        "recommendation": "Polecam",
+        "score": "5/5",
+        "purchased": "Transakcja pochodzi z Marketplace Ceneo (usługi Kup Teraz).",
+        "published_at": "2020-05-04 17:06:45",
+        "purchased_at": "2020-04-28 13:44:26",
+        "thumbs_up": "3",
+        "thumbs_down": "1",
+        "content": "Słuchawki na prawdę świetne pod każdym względem. Jakość wykonania, super dźwięk oraz bardzo dobra jakość dźwięku mikrofonu.",
+        "pros": [],
+        "cons": []
+    },
+    {
+        "opinion_id": "13945753",
+        "author": "d...i",
+        "recommendation": "Polecam",
+        "score": "5/5",
+        "purchased": "Transakcja pochodzi z Marketplace Ceneo (usługi Kup Teraz).",
+        "published_at": "2021-02-12 12:10:18",
+        "purchased_at": "2021-02-06 11:40:43",
+        "thumbs_up": "4",
+        "thumbs_down": "1",
+        "content": "Bardzo dobre słuchawki za dobrą cenę. W porównaniu do hyperx cloud alpha przebijają je brzmieniem, basami oraz zawartością. Dostajemy solidnie wykonany produkt, który swoje waży, jednak nie przeszkadza to w wygodnym użytkowaniu ich przez dłuższy czas. Oczywiście wypełnienie pałąka mogłoby być ciut większe ponieważ czujemy jen na czubku głowy po dłuższym czasie. Jeśli chodzi zaś o sam dźwięk i brzmienie słuchawek to jest to najwyższa półka klasowa. Do tego dostajemy bardzo dobry bas z możliwością korygowania go jak i nie tylko jego w programie ghub, który ma pełną gammę ustawień czy to dźwięku stereo czy przestrzennego 7.1 to również mega zaletą jest jego mikrofon, który również możemy ustawić pod siebie, żeby nasz głos brzmiał naturalnie. Dodatkowe kable sprawiają, że możemy tych słuchawek używać ze smartfonem lub innym urządzeniem mobilnym (tablet, ipad itd.) oraz możliwością nie korzystania z karty dźwiękowej poprzez specjalny rozdzielacz na mikrofon i słuchawki poprzez minijack 3.5. Same kable są lepszej jakości niż w moich poprzednich słuchawkach oraz pilot jest wykonany precyzyjniej a do tego nie zawadza o blat biurka. Jest on umieszczony tuż przy szyji, więc nie ma możliwosći zawadzenia o coś lub stukania. Jednak nie będziemy mogli w tym czasie korzystać z ghuba do którego potrzebujemy karty dźwiękowej zamieszczonej w opakowaniu by w pełni korzystać z tych dobrodziejstw. Ten sprzęt przeznaczony do gier również bardzo dobrze radzi sobie z muzyką. W połączeniu z moim telefonem i equalizerem jest to niebo, a ziemia w porównaniu do moich poprzednich słuchawek hyperx cloud alpha. Niskie tony są wyraźne i ładnie się rozchodzą w słuchawce. Średnie tony są wyraźne, jednak trochę wycofane moim zdaniem, za to wysokie tony dobrze słyszalne. Nie zmienia to jednak faktu że średnie tony jeśli są dla nas trochę wycofane to możemy je podkręcić właśnie wspomnianym programem ghub do słuchawek. Zatem jak widzicie zalet jest od groma. Jeśli chodzi o wady to tutaj nie ma co wypisywać za dużo. Jedną wadą jak dla mnie, ale bardzo małą jest jej waga. Można je odczuć po dłuższym użytkowaniu, że cisną pod uszami jak i na czubku głowy, ale myślę że to kwestia czasu, żeby pałąk się poluzował i mniej sciskał uszy. Także to tyle. Brać i się rozkoszować :).",
+        "pros": [
+            "ergonomia",
+            "jakość dźwięku",
+            "mikrofon",
+            "wygląd"
+        ],
+        "cons": []
+    },
+    {
+        "opinion_id": "12225078",
+        "author": "Użytkownik Ceneo",
+        "recommendation": null,
+        "score": "3,5/5",
+        "purchased": "Transakcja pochodzi z Marketplace Ceneo (usługi Kup Teraz).",
+        "published_at": "2020-04-23 07:20:23",
+        "purchased_at": "2020-04-13 20:42:15",
+        "thumbs_up": "7",
+        "thumbs_down": "6",
+        "content": "Fajne słuchawki. Dobrze okalają uszy. Mikrofon dobrze się trzyma i jednocześnie elastycznie się reguluje. Dźwięk jest ok. Porażką jest opcja dźwięku przestrzennego 7.1 w słuchawkach. Dałem się nabrać że da się uzyskać dźwięk 7.1 za pomocą 2 głośników. Bez sensu. Kino domowe z oddzielnymi głośnikami 5.1 daje o wiele lepsze wrażenia niż słuchawki. A ten bajer chyba że 150 zł dodatkowo kosztował. Jako stereo dźwięk jest super. Fajne są opcje filtrów mikrofona,ktory daje czysty dźwięk. Ogólnie polecam słuchawki ale bez sensu płacić za bajer 7.1.",
+        "pros": [],
+        "cons": []
+    }];
+    $('#table4').DataTable({
+        // ajax: {
+        //     url: '/ceneowebscraper/app/opinions/83935002.json',
+        //     dataSrc: "roomsData"
+        // },
+        data : json,
+        deferRender:    true,
+        scrollY:        200,
+        scrollCollapse: true,
+        scroller:       true,
+        columns: [
+            
+            {data : 'opinion_id'},
+            {data: "author"},
+            {data: "recommendation"},
+            {data: "score"},
+            {data: "purchased"},
+            {data: "published_at"},
+            {data: "purchased_at"},
+            {data: "thumbs_up"},
+            {data: "thumbs_down"},
+            
+            {data: "pros"},
+            {data: "cons"},]
+        
+    });
+
+</script>
+   <!-- <div class="form-group">
+        <label for="sortSelect">Sortuj:</label>
+        <select class="form-control" id="sortSelect">
+          <option>Nazwa kolumny</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="filterInput">Filtruj:</label>
+        <input type="text" class="form-control" id="filterInput" placeholder="Wprowadź wartość">
+      </div>-->
+      </div>
+
+      <a href="opinie.csv" download class="btn btn-primary">Pobierz opinie (.csv)</a>
+      <a href="opinie.xlsx" download class="btn btn-primary">Pobierz opinie (.xlsx)</a>
+      <a href="opinie.json" download class="btn btn-primary">Pobierz opinie (.json)</a>
+  
+      <a href="/wykresy" class="btn btn-primary">Wykresy dotyczące produktu</a>
+
+{%endblock%}
